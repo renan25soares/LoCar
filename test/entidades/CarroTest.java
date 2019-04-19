@@ -18,6 +18,7 @@ import static org.junit.Assert.*;
  */
 public class CarroTest {
     
+    private Carro carro;
     public CarroTest() {
     }
     
@@ -31,6 +32,7 @@ public class CarroTest {
     
     @Before
     public void setUp() {
+        carro = new Carro();
     }
     
     @After
@@ -44,7 +46,7 @@ public class CarroTest {
     public void testGetID() {
         System.out.println("getID");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "ID";
         String result = instance.getID();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -57,7 +59,7 @@ public class CarroTest {
     @Test
     public void testSetID() {
         System.out.println("setID");
-        String ID = "";
+        String ID = "ID";
         Carro instance = new Carro();
         instance.setID(ID);
         // TODO review the generated test code and remove the default call to fail.
@@ -71,7 +73,7 @@ public class CarroTest {
     public void testGetNome() {
         System.out.println("getNome");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "nome";
         String result = instance.getNome();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -84,7 +86,7 @@ public class CarroTest {
     @Test
     public void testSetNome() {
         System.out.println("setNome");
-        String nome = "";
+        String nome = "nome";
         Carro instance = new Carro();
         instance.setNome(nome);
         fail("The test case is a prototype.");
@@ -97,7 +99,7 @@ public class CarroTest {
     public void testGetMarca() {
         System.out.println("getMarca");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "marca";
         String result = instance.getMarca();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -110,7 +112,7 @@ public class CarroTest {
     @Test
     public void testSetMarca() {
         System.out.println("setMarca");
-        String marca = "";
+        String marca = "marca";
         Carro instance = new Carro();
         instance.setMarca(marca);
         // TODO review the generated test code and remove the default call to fail.
@@ -124,7 +126,7 @@ public class CarroTest {
     public void testGetChassis() {
         System.out.println("getChassis");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "chassis";
         String result = instance.getChassis();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -137,7 +139,7 @@ public class CarroTest {
     @Test
     public void testSetChassis() {
         System.out.println("setChassis");
-        String chassis = "";
+        String chassis = "chassis";
         Carro instance = new Carro();
         instance.setChassis(chassis);
         // TODO review the generated test code and remove the default call to fail.
@@ -151,7 +153,7 @@ public class CarroTest {
     public void testGetPlaca() {
         System.out.println("getPlaca");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "placa";
         String result = instance.getPlaca();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -164,7 +166,7 @@ public class CarroTest {
     @Test
     public void testSetPlaca() {
         System.out.println("setPlaca");
-        String placa = "";
+        String placa = "placa";
         Carro instance = new Carro();
         instance.setPlaca(placa);
         // TODO review the generated test code and remove the default call to fail.
@@ -178,7 +180,7 @@ public class CarroTest {
     public void testGetKilometragem() {
         System.out.println("getKilometragem");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "kilometragem";
         String result = instance.getKilometragem();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -191,7 +193,7 @@ public class CarroTest {
     @Test
     public void testSetKilometragem() {
         System.out.println("setKilometragem");
-        String kilometragem = "";
+        String kilometragem = "kilometragem";
         Carro instance = new Carro();
         instance.setKilometragem(kilometragem);
         // TODO review the generated test code and remove the default call to fail.
@@ -205,7 +207,7 @@ public class CarroTest {
     public void testGetStatus() {
         System.out.println("getStatus");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "status";
         String result = instance.getStatus();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -218,7 +220,7 @@ public class CarroTest {
     @Test
     public void testSetStatus() {
         System.out.println("setStatus");
-        String status = "";
+        String status = "status";
         Carro instance = new Carro();
         instance.setStatus(status);
         // TODO review the generated test code and remove the default call to fail.
@@ -232,7 +234,7 @@ public class CarroTest {
     public void testGetValorLocacao() {
         System.out.println("getValorLocacao");
         Carro instance = new Carro();
-        String expResult = "";
+        String expResult = "valorLocacao";
         String result = instance.getValorLocacao();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -245,7 +247,7 @@ public class CarroTest {
     @Test
     public void testSetValorLocacao() {
         System.out.println("setValorLocacao");
-        String valorLocacao = "";
+        String valorLocacao = "valorLocacao";
         Carro instance = new Carro();
         instance.setValorLocacao(valorLocacao);
         // TODO review the generated test code and remove the default call to fail.

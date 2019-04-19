@@ -19,7 +19,9 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({entidades.LocacaoTest.class, entidades.CarroTest.class, entidades.ClienteTest.class})
 public class EntidadesSuite {
-
+    private Carro carro; 
+    private Cliente cliente;
+    private Locacao locacao;
     @BeforeClass
     public static void setUpClass() throws Exception {
     }
@@ -30,6 +32,9 @@ public class EntidadesSuite {
 
     @Before
     public void setUp() throws Exception {
+        carro = new Carro();
+        cliente = new Cliente();
+        locacao = new Locacao();
     }
 
     @After

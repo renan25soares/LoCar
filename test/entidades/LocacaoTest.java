@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * @author joser
  */
 public class LocacaoTest {
-    
+    private Locacao locacao;
     public LocacaoTest() {
     }
     
@@ -31,6 +31,7 @@ public class LocacaoTest {
     
     @Before
     public void setUp() {
+        locacao = new Locacao();
     }
     
     @After
@@ -44,7 +45,7 @@ public class LocacaoTest {
     public void testGetID() {
         System.out.println("getID");
         Locacao instance = new Locacao();
-        String expResult = "";
+        String expResult = "ID";
         String result = instance.getID();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -57,7 +58,7 @@ public class LocacaoTest {
     @Test
     public void testSetID() {
         System.out.println("setID");
-        String id = "";
+        String id = "ID";
         Locacao instance = new Locacao();
         instance.setID(id);
         // TODO review the generated test code and remove the default call to fail.
@@ -71,7 +72,7 @@ public class LocacaoTest {
     public void testGetCodigoCarro() {
         System.out.println("getCodigoCarro");
         Locacao instance = new Locacao();
-        String expResult = "";
+        String expResult = "codigoCarro";
         String result = instance.getCodigoCarro();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -84,7 +85,7 @@ public class LocacaoTest {
     @Test
     public void testSetCodigoCarro() {
         System.out.println("setCodigoCarro");
-        String codigoCarro = "";
+        String codigoCarro = "codigoCarro";
         Locacao instance = new Locacao();
         instance.setCodigoCarro(codigoCarro);
         // TODO review the generated test code and remove the default call to fail.
@@ -98,7 +99,7 @@ public class LocacaoTest {
     public void testGetCodigoCliente() {
         System.out.println("getCodigoCliente");
         Locacao instance = new Locacao();
-        String expResult = "";
+        String expResult = "codigoCliente";
         String result = instance.getCodigoCliente();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -111,7 +112,7 @@ public class LocacaoTest {
     @Test
     public void testSetCodigoCliente() {
         System.out.println("setCodigoCliente");
-        String codigoCliente = "";
+        String codigoCliente = "codigoCliente";
         Locacao instance = new Locacao();
         instance.setCodigoCliente(codigoCliente);
         // TODO review the generated test code and remove the default call to fail.
@@ -125,7 +126,7 @@ public class LocacaoTest {
     public void testGetDataRetorno() {
         System.out.println("getDataRetorno");
         Locacao instance = new Locacao();
-        String expResult = "";
+        String expResult = "dataRetorno";
         String result = instance.getDataRetorno();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -138,7 +139,7 @@ public class LocacaoTest {
     @Test
     public void testSetDataRetorno() {
         System.out.println("setDataRetorno");
-        String dataRetorno = "";
+        String dataRetorno = "dataRetorno";
         Locacao instance = new Locacao();
         instance.setDataRetorno(dataRetorno);
         // TODO review the generated test code and remove the default call to fail.

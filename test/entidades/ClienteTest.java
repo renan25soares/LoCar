@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * @author joser
  */
 public class ClienteTest {
-    
+    private Cliente cliente;
     public ClienteTest() {
     }
     
@@ -31,6 +31,7 @@ public class ClienteTest {
     
     @Before
     public void setUp() {
+        cliente = new Cliente();
     }
     
     @After
@@ -44,7 +45,7 @@ public class ClienteTest {
     public void testGetID() {
         System.out.println("getID");
         Cliente instance = new Cliente();
-        String expResult = "";
+        String expResult = "ID";
         String result = instance.getID();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -57,7 +58,7 @@ public class ClienteTest {
     @Test
     public void testSetID() {
         System.out.println("setID");
-        String ID = "";
+        String ID = "ID";
         Cliente instance = new Cliente();
         instance.setID(ID);
         // TODO review the generated test code and remove the default call to fail.
@@ -71,7 +72,7 @@ public class ClienteTest {
     public void testGetNome() {
         System.out.println("getNome");
         Cliente instance = new Cliente();
-        String expResult = "";
+        String expResult = "nome";
         String result = instance.getNome();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -84,7 +85,7 @@ public class ClienteTest {
     @Test
     public void testSetNome() {
         System.out.println("setNome");
-        String nome = "";
+        String nome = "nome";
         Cliente instance = new Cliente();
         instance.setNome(nome);
         // TODO review the generated test code and remove the default call to fail.
@@ -98,7 +99,7 @@ public class ClienteTest {
     public void testGetRg() {
         System.out.println("getRg");
         Cliente instance = new Cliente();
-        String expResult = "";
+        String expResult = "rg";
         String result = instance.getRg();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -111,7 +112,7 @@ public class ClienteTest {
     @Test
     public void testSetRg() {
         System.out.println("setRg");
-        String rg = "";
+        String rg = "rg";
         Cliente instance = new Cliente();
         instance.setRg(rg);
         // TODO review the generated test code and remove the default call to fail.
@@ -125,7 +126,7 @@ public class ClienteTest {
     public void testGetCpf() {
         System.out.println("getCpf");
         Cliente instance = new Cliente();
-        String expResult = "";
+        String expResult = "cpf";
         String result = instance.getCpf();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -138,7 +139,7 @@ public class ClienteTest {
     @Test
     public void testSetCpf() {
         System.out.println("setCpf");
-        String cpf = "";
+        String cpf = "cpf";
         Cliente instance = new Cliente();
         instance.setCpf(cpf);
         // TODO review the generated test code and remove the default call to fail.
@@ -152,7 +153,7 @@ public class ClienteTest {
     public void testGetCarteiraMotorista() {
         System.out.println("getCarteiraMotorista");
         Cliente instance = new Cliente();
-        String expResult = "";
+        String expResult = "carteiraMotorista";
         String result = instance.getCarteiraMotorista();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -165,7 +166,7 @@ public class ClienteTest {
     @Test
     public void testSetCarteiraMotorista() {
         System.out.println("setCarteiraMotorista");
-        String carteiraMotorista = "";
+        String carteiraMotorista = "carteiraMotorista";
         Cliente instance = new Cliente();
         instance.setCarteiraMotorista(carteiraMotorista);
         // TODO review the generated test code and remove the default call to fail.
